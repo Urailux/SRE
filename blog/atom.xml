@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://urailux.github.io/SRE/blog"/>
     <subtitle>SRE Docs Blog</subtitle>
-    <icon>https://urailux.github.io/SRE/img/favicon.ico</icon>
+    <icon>https://urailux.github.io/SRE/img/favicon_owl.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://urailux.github.io/SRE/blog/welcome</id>
