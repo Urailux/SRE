@@ -3,17 +3,15 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'SRE Docs',
+  tagline: 'Site Reliability Engineering Knowledge Base',
   favicon: 'img/favicon.ico',
 
-  // ✅ ใส่ URL และ baseUrl สำหรับ GitHub Pages
   url: 'https://urailux.github.io',
-  baseUrl: '/docusaurus/',
+  baseUrl: '/SRE/', // ✅ ใช้ตาม repo GitHub
 
-  // ✅ GitHub username และชื่อ repo
   organizationName: 'Urailux',
-  projectName: 'docusaurus',
+  projectName: 'SRE',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -21,7 +19,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'th'], // ✅ เพิ่มภาษาไทย (ถ้าอยากใช้ในอนาคต)
   },
 
   presets: [
@@ -30,8 +28,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/Urailux/docusaurus/tree/CRTH-2130-Urailux/',
+          editUrl: 'https://github.com/Urailux/SRE/tree/docusaurus_pui/',
         },
         blog: {
           showReadingTime: true,
@@ -39,8 +36,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/Urailux/docusaurus/tree/CRTH-2130-Urailux/',
+          editUrl: 'https://github.com/Urailux/SRE/tree/docusaurus_pui/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -55,9 +51,9 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'SRE Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'SRE Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -69,7 +65,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Urailux/docusaurus',
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/Urailux/SRE',
           label: 'GitHub',
           position: 'right',
         },
@@ -113,12 +113,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Urailux/docusaurus',
+              href: 'https://github.com/Urailux/SRE',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Urailux. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
