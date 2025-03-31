@@ -21,3 +21,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroBanner {
+  background-color: #1A1A40; /* สีกรมเข้ม */
+  color: #ffffff;            /* สีข้อความ */
+  padding: 4rem 0;
+  text-align: center;
+}
