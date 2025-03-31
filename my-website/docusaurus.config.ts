@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'SRE Docs',
+  title: 'Thailand Life SRE Docs',
   tagline: 'Site Reliability Engineering Knowledge Base',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/sre.ico',
 
   url: 'https://urailux.github.io',
   baseUrl: '/SRE/', // ✅ ใช้ตาม repo GitHub
@@ -51,19 +51,18 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'SRE Docs',
+      title: 'SRE Team',
       logo: {
         alt: 'SRE Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo_sre.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'SRE Team Overview',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'localeDropdown',
           position: 'right',
@@ -82,7 +81,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'SRE Team Overview',
               to: '/docs/intro',
             },
           ],
@@ -107,10 +106,6 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/Urailux/SRE',
