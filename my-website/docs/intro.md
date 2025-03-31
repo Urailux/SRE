@@ -1,47 +1,60 @@
 ---
+id: intro
+title: SRE Team Overview
 sidebar_position: 1
+description: Overview of the Site Reliability Engineering team, including mission, structure, and responsibilities.
 ---
 
-# Tutorial Intro
+# 👨‍💻 SRE Team Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the official documentation of the **SRE (Site Reliability Engineering)** team.
 
-## Getting Started
+We focus on building resilient infrastructure, improving observability, and ensuring high system reliability while supporting product and development teams.
 
-Get started by **creating a new site**.
+---
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## 🎯 Mission
 
-### What you'll need
+> "We build reliability into everything we run."
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Our key objectives:
+- Ensure service uptime, performance, and scalability
+- Empower engineering teams with tools and guidance
+- Prevent incidents with automation and observability
+- Drive continuous improvement through postmortems and root cause analysis
 
-## Generate a new site
+---
 
-Generate a new Docusaurus site using the **classic template**.
+## 🧑‍🤝‍🧑 Team Structure
 
-The classic template will automatically be added to your project after you run the command:
+Our team consists of 3 specialized sub-teams:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+| Sub-Team                  | Key Responsibilities |
+|--------------------------|----------------------|
+| **Site Reliability Engineer** | Monitoring, alerting, SLIs/SLOs, incident response |
+| **Application Support**       | Incident triage, root cause analysis, customer communication |
+| **Infrastructure Engineer**   | Cloud provisioning, networking, automation (IaC) |
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+---
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## 🛠 Scope & Responsibilities
 
-## Start your site
+- Monitoring & Alerting (Grafana, Prometheus, Kibana)
+- Incident response and runbooks
+- CI/CD systems and deployment pipelines
+- Infrastructure as Code (Terraform, Ansible)
+- Cloud and on-prem resource management
+- Collaborate with Dev teams on service reliability
 
-Run the development server:
+---
 
-```bash
-cd my-website
-npm run start
-```
+## 📌 Ownership
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+| Area                         | Owned By |
+|------------------------------|----------|
+| Production Kubernetes Cluster | Infra    |
+| Logging & Monitoring Stack    | SRE      |
+| Customer-facing Support Flow | App Support |
+| CI/CD Pipelines               | Shared   |
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+---
