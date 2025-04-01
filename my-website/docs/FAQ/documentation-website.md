@@ -46,3 +46,44 @@ These folders and files form the foundation of your Docusaurus project. You'll m
 - `sidebars.ts` to manage the sidebar menu.
 - `docusaurus.config.ts` to customize the site layout and behavior.
 
+
+## 🧪 Do I Need to Run `npm run build` When Testing Locally?
+
+If you are **only testing the site on your local machine** and **not sharing it with others yet**,  
+➡️ **You do NOT need to run `npm run build`**.
+
+---
+### ✅ Use This Instead
+Run the following command to start a local development server:
+
+
+## 🚀 Run a local development server
+
+```bash
+cd my-website
+npm run start
+```
+- Opens the site at: http://localhost:3000
+- Automatically refreshes when you edit files (live reload)
+- Fast and convenient for testing changes
+
+❌ When is npm run build NOT necessary?
+You don't need npm run build if:
+- You are writing or editing documentation content
+- You are testing the layout or links locally
+- You are not ready to publish or deploy the site yet
+
+✅ When SHOULD You Run npm run build?
+You should run npm run build when:
+- You're ready to publish your site
+- You plan to deploy it to GitHub Pages or another hosting platform
+- You want to test how the final production site looks
+
+## 🚀 Summary
+Here’s a quick summary of when to use each command:
+
+| **Situation**                    | **Command to Use**                                      |
+|----------------------------------|---------------------------------------------------------|
+| Local testing only               | `npm run start` ✅                                      |
+| Ready to build the static site   | `npm run build` ✅                                      |
+| Deploying to GitHub Pages        | `npm run build` ➕ `USE_SSH=true npm run deploy` ✅    |
